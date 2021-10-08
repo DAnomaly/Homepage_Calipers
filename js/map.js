@@ -20,10 +20,10 @@ $(document).ready(function () {
     marker.setMap(map);
 
     // 지도가 이동하는 것을 막습니다.
-    map.setDraggable(false);
+    // map.setDraggable(false);
 
     // 지도가 확대,축소하는 것을 막습니다.
-    map.setZoomable(false);
+    // map.setZoomable(false);
 
 });
 
