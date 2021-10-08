@@ -112,6 +112,8 @@ function generateHeader() {
                 });
             }
             repeat(mapping);
+
+            generateNavBar(mapping);
         }
     );
 }
@@ -153,6 +155,117 @@ function generateFooter() {
         );
         
 }
+
+// id="nav-bar"
+// Banner아래에 nav-bar를 생성합니다.
+function generateNavBar(mapping) {
+
+    let $bar = $('#nav-bar');
+    // id="nav-bar"가 존재하지 않는다면 해당 메소드를 실행하지 않습니다.
+    if($bar[0] == undefined){
+        return;
+    }
+
+    let title = $bar.data('title');
+    // data-title=""가 존재하지 않는다면  해당 메소드를 실행하지 않습니다.
+    if(title == undefined){
+        return;
+    }
+    
+    // class="left-div"를 작성합니다.
+    let leftDiv = $('<div>').appendTo($bar).addClass('left-div');
+    function generateLeftDiv(element) {
+        if(element.contents != null){
+            leftDiv
+            .append(
+                $('<a>')
+                    .attr('href',element.href)
+                    .text(element.title)
+            )
+            .append(
+                $('<span>')
+                    .html('&gt;')
+            );
+            $.each(element.contents, function (_index, element) { 
+                 leftDiv
+                    .append(
+                        $('<a>')
+                            .attr('href',element.href)
+                            .text(element.title)
+                 );
+            });
+        }
+    }
+    $.each(mapping, function (_index, element) { 
+        var repeatEach = true;
+        if(element.title == title) {
+            generateLeftDiv(element);
+            return false;
+        }
+        if(element.contents != null) {
+            $.each(element.contents, function (_index, element) { 
+                 if(element.title == title) {
+                     generateLeftDiv(element);
+                     repeatEach = false;
+                     return false;
+                 }
+            });
+        }
+        return repeatEach;
+    });
+    
+
+    // class="right-div"를 작성합니다.
+    let rightDiv = $('<div>').appendTo($bar).addClass('right-div');
+    function generateRightDiv(contents) {
+        var result = true;
+        var tempHtml = rightDiv.html();
+        $.each(contents, function (_index, element) { 
+            
+            rightDiv.empty();
+            rightDiv.html(tempHtml);
+
+            rightDiv.append(
+                $('<span>').html('&gt;')
+            );
+
+            rightDiv.append(
+                $('<a>').attr('href',element.href).text(element.title)
+            );
+            if(element.title == title) {
+                return result = false;
+            }
+            if(element.contents != null) {
+                return result = generateRightDiv(element.contents);
+            }
+            if(result) {
+            }
+        });
+
+        return result;
+    }
+    $.each(mapping, function (_index, element) {
+        var repeatEach = true;
+        
+        rightDiv.empty();
+        rightDiv.append('<i class="fas fa-home"></i>');
+        rightDiv.append(
+            $('<a>').attr('href',element.href).text(element.title)
+        );
+        
+        if(element.title == title){
+            repeatEach = false;
+            return repeatEach;
+        }
+        
+        if(element.contents != null) {
+            repeatEach = generateRightDiv(element.contents);
+        }
+
+        return repeatEach;
+    });
+}
+
 
 // scrollUpBtn를 기능과 함께 생성합니다.
 function scrollUpBtn() {
