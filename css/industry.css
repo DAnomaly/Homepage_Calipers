@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* section */
+.container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.section h2 {
+    padding: 0;
+    margin-bottom: 20px;
+    color: rgb(73, 69, 69);
+    font-size: 20px;
+}   
+
+.section p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+    color: rgb(73, 69, 69);
+    font-size: 13px;
+} 
+
+.text-box {
+    display: flex;
+    max-width: 60%;
+   
+}
+
+.section .box-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    min-width: 720px;
+    margin: 0 auto;
+  
+}
+.section .box {
+    width: 310px;
+    box-sizing: border-box;
+    background-color: rgb(224, 224, 224);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.section .box {
+    width: 310px;
+    box-sizing: border-box;
+    background-color: rgb(224, 224, 224);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.section .box .title {
+    position: relative;
+    text-align: center;
+    background-color: rgb(218, 120, 41);
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0px;
+}
+.section .box .title:after {
+    border-top:0px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(218, 120, 41);
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    left:30px;
+}
+.section .box .title2 {
+    position: relative;
+    text-align: center;
+    background-color: rgb(55, 89, 140);
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0px;
+}
+.section .box .title2:after {
+    border-top:0px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(55, 89, 140);
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    left:30px;
+}
+.section .box .title3 {
+    position: relative;
+    text-align: center;
+    background-color: rgb(131, 168, 68);
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0px;
+}
+.section .box .title3:after {
+    border-top:0px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(131, 168, 68);
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    left:30px;
+}
+.section .box ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    color: rgb(220,220,220); 
+    list-style: none;
+}
+.section .box ul li {
+    font-size: 13px;;
+    color: rgb(71, 68, 68);
+    margin: 8px 0;
+    padding: 0;
+}
+a { 
+    text-decoration:none;
+    color: rgb(75, 118, 182); 
+    font-weight: 400;
+}
+
+
+
+
