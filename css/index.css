@@ -13,8 +13,6 @@
     object-fit: cover;
     z-index: -1; 
 }
-
-
 /* section-1 */
 .section-1 {
     background-color: rgba(0,0,0,0.6);
@@ -102,7 +100,8 @@
 /* section-4 */
 .section-4 {
     padding-top: 220px;
-    background-color:rgb(55, 89, 140);
+    background-color:rgb(43, 76, 126);
+    opacity: 0.9;
     height: 100vh;
     box-sizing: border-box;
 }
