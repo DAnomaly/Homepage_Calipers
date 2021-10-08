@@ -1,0 +1,150 @@
+{
+    "mapping" : [
+        {
+            "title" : "회사소개",
+            "href" : "index.html",
+            "contents" : [
+                {
+                    "title" : "회사소개",
+                    "href" : "index.html"
+                },
+                {
+                    "title" : "회사연혁",
+                    "href" : "introduce_history.html"
+                },
+                {
+                    "title" : "찾아오시는 길",
+                    "href" : "index.html#service"
+                }
+            ]
+        },
+        {
+            "title" : "솔루션",
+            "href" : "solution_category.html",
+            "contents" : [
+                {
+                    "title" : "E-PROCESS",
+                    "href" : "solution_eprocess.html",
+                    "contents" : [
+                        {
+                            "title" : "KeyProcess",
+                            "href" : "solution_eprocess_keyprocess.html",
+                            "contents" : [
+                                {
+                                    "title" : "KeyUnderwriting",
+                                    "href" : "solution_eprocess_keyprocess_keyunderwriting.html"
+                                },
+                                {
+                                    "title" : "KeyClaim",
+                                    "href" : "solution_eprocess_keyprocess_keyclaim.html"
+                                },
+                                {
+                                    "title" : "KeyScreening",
+                                    "href" : "solution_eprocess_keyprocess_keyscreening.html"
+                                }
+                            ]
+                        },
+                        {
+                            "title" : "BPR",
+                            "href" : "solution_eprocess_bpr.html"
+                        },
+                        {
+                            "title" : "Bancassurance",
+                            "href" : "solution_eprocess_bancassurance.html"
+                        }
+                    ]
+                },
+                {
+                    "title" : "E-KNOWLEDGE",
+                    "href" : "solution_eknowledge_keyportal.html",
+                    "contents" : [
+                        {
+                            "title" : "KeyPortal",
+                            "href" : "solution_eknowledge_keyportal.html"
+                        },
+                        {
+                            "title" : "KeyDocs",
+                            "href" : "solution_eknowledge_keydocs.html"
+                        },
+                        {
+                            "title" : "SecureDocs",
+                            "href" : "solution_eknowledge_securedocs.html"
+                        },
+                        {
+                            "title" : "6SigmaWorks",
+                            "href" : "solution_eknowledge_6sigmaworks.html"
+                        }
+                    ]
+                },
+                {
+                    "title" : "E-WIRELESS",
+                    "href" : "solution_ewireless_mobileworks.html",
+                    "contents" : [
+                        {
+                            "title" : "MobileWorks",
+                            "href" : "solution_ewireless_mobileworks.html"
+                        },
+                        {
+                            "title" : "MobilePlanner",
+                            "href" : "solution_ewireless_mobileplanner.html"
+                        },
+                        {
+                            "title" : "MobileWay",
+                            "href" : "solution_ewireless_mobileway.html"
+                        }
+                    ]
+                },
+                {
+                    "title" : "ECM",
+                    "href" : "solution_ECM.html",
+                    "contents" : [
+                        {
+                            "title" : "BPM",
+                            "href" : "solution_ECM_BPM.html"
+                        },
+                        {
+                            "title" : "CM",
+                            "href" : "solution_ECM_CM.html"
+                        },
+                        {
+                            "title" : "WCM",
+                            "href" : "solution_ECM_WCM.html"
+                        },
+                        {
+                            "title" : "IM",
+                            "href" : "solution_ECM.html"
+                        }
+                    ]
+                },
+                {
+                    "title" : "OTHER",
+                    "href" : "solution_other_accesslist.html",
+                    "contents" : [
+                        {
+                        "title" : "전자명부",
+                        "href" : "solution_other_accesslist.html"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "인더스트리",
+            "href" : "industry.html",
+            "contents" : [
+                {
+                    "title" : "보험",
+                    "href" : "industry_insurance.html"
+                },
+                {
+                    "title" : "카드",
+                    "href" : "industry_card.html"
+                },
+                {
+                    "title" : "은행",
+                    "href" : "industry_bank.html"
+                }
+            ]
+        }
+    ]
+}

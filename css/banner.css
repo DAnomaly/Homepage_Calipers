@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* title-banner */
+#title-banner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 300px;
+}
+#title-banner img.banner {
+    position: absolute;
+    object-fit: cover;
+    width: 1200px;
+    height: 260px;
+    z-index: -1;
+}
+#title-banner > div {
+    background-color: rgba(0,0,0,0.6);
+    height: 260px;
+}
+#title-banner > div > h3 {
+    font-size: 30px;
+    color: rgb(242,242,242);
+    text-align: center;
+    margin: 0;
+    padding-top: 120px;
+}
