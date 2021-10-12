@@ -282,8 +282,7 @@ function scrollUpBtn() {
     });
 
     $btn.click(function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
+        $('html').scrollTop(0);
     });
 }
 

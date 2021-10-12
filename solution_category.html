@@ -10,11 +10,12 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/banner.css">
-        <link rel="stylesheet" href="./css/solution_category1.css">
+        <link rel="stylesheet" href="./css/solution_category.css">
 
         <!-- jquery & javascript -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="./js/header.js" charset="UTF-8"></script>
+        <script src="./js/generate_solution_list.js" charset="UTF-8"></script>
         
     </head>
     <body>
@@ -28,9 +29,9 @@
 
         <!-- nav-bar -->
         <div class="nav-bar">
-            <a href="#E-Process">E-Process</a>
-            <a href="#E-Knowledge">E-Knowledge</a>
-            <a href="#E-Wireless">E-Wireless</a>
+            <a class="loc-E-PROCESS">E-Process</a>
+            <a class="loc-E-KNOWLEDGE">E-Knowledge</a>
+            <a class="loc-E-WIRELESS">E-Wireless</a>
         </div>
 
         <!-- section-1 -->
@@ -38,7 +39,7 @@
             <h2><span class="color-blue">TRIPLE AIMS</span>의 <span class="color-black">E-Process</span>는</h2>
             <h3>국내 금융업무 프로세스에 적합한 솔루션을 제공합니다.</h3>
             <div class="box-container">
-                <div class="content-box">
+                <div class="content-box loc-KeyProcess">
                     <img src="./img/cate_solution_img1.jpg"/>
                     <p class="title">
                         KeyProcess
@@ -47,7 +48,7 @@
                         금융 업무자동화 솔루션
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-BPR">
                     <img src="./img/cate_solution_img2.jpg"/>
                     <p class="title">
                         BPR
@@ -57,7 +58,7 @@
                         Re-engineering or Redesign
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-Bancassurance">
                     <img src="./img/cate_solution_img3.jpg"/>
                     <p class="title">
                         Bancassurance
@@ -75,7 +76,7 @@
             <h2><span class="color-blue">TRIPLE AIMS</span>의 <span class="color-black">E-Knowledge</span>는</h2>
             <h3>체계적으로 관리, 공유되는 지식경영 솔루션을 제공합니다.</h3>
             <div class="box-container">
-                <div class="content-box">
+                <div class="content-box loc-KeyPortal">
                     <img src="./img/cate_solution_img4.jpg"/>
                     <p class="title">
                         KeyPortal
@@ -85,7 +86,7 @@
                         기업지식포탈 솔루션
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-KeyDocs">
                     <img src="./img/cate_solution_img5.jpg"/>
                     <p class="title">
                         KeyDocs
@@ -96,7 +97,7 @@
                         차세대 전자문서관리 시스템
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-SecureDocs">
                     <img src="./img/cate_solution_img6.jpg"/>
                     <p class="title">
                         SecureDocs
@@ -107,7 +108,7 @@
                         보안문서관리 솔루션
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-6SigmaWorks">
                     <img src="./img/cate_solution_img7.jpg"/>
                     <p class="title">
                         6SigmaWorks
@@ -122,13 +123,13 @@
 
         <!-- section-3 -->
         <div class="section section-3" id="E-Wireless">
-            <h2><span class="color-blue">TRIPLE AIMS</span>의 <span class="color-black">E-Knowledge</span>는</h2>
+            <h2><span class="color-blue">TRIPLE AIMS</span>의 <span class="color-black">E-Wireless</span>는</h2>
             <h3>체계적으로 관리, 공유되는 지식경영 솔루션을 제공합니다.</h3>
             <div class="box-container">
-                <div class="content-box">
+                <div class="content-box loc-MobileWorks">
                     <img src="./img/cate_solution_img8.jpg"/>
                     <p class="title">
-                        MobieWorks
+                        MobileWorks
                     </p>
                     <p class="content">
                         직장에서 사용하는 회사 그룹웨어를<br/>
@@ -136,10 +137,10 @@
                         있도록 만든 솔루션
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-MobilePlanner">
                     <img src="./img/cate_solution_img9.jpg"/>
                     <p class="title">
-                        MobiePlanner
+                        MobilePlanner
                     </p>
                     <p class="content">
                         PDA를 통하여<br/>
@@ -148,7 +149,7 @@
                         도와주는 도구
                     </p>
                 </div>
-                <div class="content-box">
+                <div class="content-box loc-MobileWay">
                     <img src="./img/cate_solution_img10.jpg"/>
                     <p class="title">
                         MobileWay
@@ -165,13 +166,16 @@
 
         <!-- other-bar -->
         <div class="other-bar">
-            <a href="./solution_category2.html">
+            <div class="lapping-box">
                 <span>그 외에 더 많은 솔루션</span>
                 <span class="icon">
                     <i class="fas fa-caret-right"></i>
                 </span>
-            </a>
+            </div>
         </div>
+
+        <!-- section-4 -->
+        <div class="section-4" id="solution-contents"></div>
 
         <div id="top-button"></div>
         <div id="bottom-container"></div>

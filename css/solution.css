@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* section */
+.section {
+    width: 1200px;
+    min-height: 300px;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+.section img {
+    object-fit: cover;
+}
+
+/* box-container */
+.section .box-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(98, 98, 98);
+}
+.section .box-container h4 {
+     font-size: 18px;
+}
+.section .box-container h5 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.section .box-container dt {
+    margin: 0;
+    padding: 0;
+}
+.section .box-container dd {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    color:rgb(141, 141, 141);
+}
+.section .box-container table {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.section .box-container table :is(td,th) {
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.section .box-container table thead {
+    background-color:rgb(98, 98, 98);
+    color: rgb(250, 250, 250);
+}
+.section .box-container table tbody {
+    background-color: rgb(235, 235, 235);
+}
+.section .box-container :is(strong, h4) {
+    color: rgb(0, 0, 0);
+}
+.section .box-container .box {
+    padding: 10px;
+}
+.section .box-container .title-box {
+    margin: 10px 50px;
+    padding: 10px 30px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* col-lg */
+.section .col-lg {
+    width: 100%;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin: 5px 0;
+}

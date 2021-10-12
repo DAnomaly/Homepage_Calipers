@@ -173,7 +173,8 @@ body {
 /* nav-bar */
 #nav-bar {
     display: flex;
-    width: 1200px;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
     padding: 16px 14px;
     background-color: rgb(218, 120, 41);
@@ -181,11 +182,11 @@ body {
 }
 #nav-bar .left-div {
     text-align: left;
-    width: 100%;
+    width: 600px;
 }
 #nav-bar .right-div {
     text-align: right;
-    width: 100%;
+    width: 600px;
 }
 #nav-bar :is(a, span, i) {
     display: inline-block;
