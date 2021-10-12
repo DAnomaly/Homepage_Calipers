@@ -3,6 +3,8 @@ html {
     scroll-behavior: smooth; 
   } 
   
+
+  
 body > .tab {
     display: flex;
     justify-content: center;
@@ -168,12 +170,26 @@ a {
 }
 
 .cate-box {
-    margin-bottom: 50px;
+    margin-top: 50px;
+ 
 }
 
 .box-container p {
-    margin-top: 50px;
-}
+    margin-top: 50px;  
+    animation-duration: 1s;
+        animation-name: slidein;
+     }
 
+     @keyframes slidein {
+        from {
+          margin-left: 30%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+    }
 
 
