@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html { 
+    scroll-behavior: smooth; 
+  } 
+  
 .blue {
     color: rgb(115, 183, 228);
 }
@@ -26,6 +30,7 @@
 .section-1 h2{ font-size: 50px; }
 .section-1 h3{ font-size: 30px; }
 .section-1 p{ font-size: 20px; }
+
 
 /* section-2 */
 .section-2 {
