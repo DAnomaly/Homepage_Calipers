@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html { 
+    scroll-behavior: smooth; 
+  } 
 
 /* nav-bar */
 body > .nav-bar {
@@ -28,8 +31,8 @@ body > .section {
     height: 600px;
     margin: 0 auto;
     background-color: rgb(244, 244, 244);
-    border-bottom: 1px solid rgb(155, 155, 155);
     box-sizing: border-box;
+    border-bottom: 1px solid rgb(155, 155, 155);
     color: rgb(65, 65, 65);
 }
 body > .section-3 { border: 0; }

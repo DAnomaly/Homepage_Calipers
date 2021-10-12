@@ -1,4 +1,45 @@
 @charset "UTF-8";
+html { 
+    scroll-behavior: smooth; 
+  } 
+
+body > .tab {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body > .tab a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#tab1 p {
+    color: rgb(218, 120, 41);
+    font-weight: bold;
+}
+#tab2 p {
+    color: rgb(55, 89, 140);
+    font-weight: bold;
+}
+#tab3 p {
+    color: rgb(131, 168, 68);
+    font-weight: bold;
+}
+
+body > .tab a:nth-of-type(1) { background-color: rgb(218, 120, 41); }
+body > .tab a:nth-of-type(2) { background-color: rgb(55, 89, 140); }
+body > .tab a:nth-of-type(3) { background-color: rgb(131, 168, 68); }
+
+
 
 /* section */
 .container{
@@ -7,29 +48,53 @@
     max-width: 1100px;
 }
 .section {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
     box-sizing: border-box;
 }
 .section h2 {
     padding: 0;
-    margin-bottom: 20px;
-    color: rgb(73, 69, 69);
-    font-size: 20px;
-}   
+    margin-bottom: 30px;
+    color:  rgb(254, 253, 255);
+    text-shadow: 2px 2px 6px rgb(61, 61, 61);
+    font-size: 30px;
+    animation-duration: 1s;
+    animation-name: slidein;
+     }
+
+     @keyframes slidein {
+        from {
+          margin-left: 30%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+    }   
+}
 
 .section p {
     padding: 0;
     margin: 0;
-    margin-bottom: 60px;
-    color: rgb(73, 69, 69);
-    font-size: 13px;
+    margin-bottom: 80px;
+    color: rgb(104, 99, 99);
+    font-size: 15px;
 } 
 
 .text-box {
     display: flex;
     max-width: 60%;
    
+}
+
+.text-box2 {
+    display: flex;
+    max-width: 60%;
+}
+
+.text-box2 p{
+   font-size: 15px;
 }
 
 .section .box-container {
@@ -41,19 +106,15 @@
   
 }
 .section .box {
-    width: 310px;
+    width: 350px;
     box-sizing: border-box;
     background-color: rgb(224, 224, 224);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+   
 }
-.section .box {
-    width: 310px;
-    box-sizing: border-box;
-    background-color: rgb(224, 224, 224);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
+
+
 
 .section .box .title {
     position: relative;
@@ -65,17 +126,10 @@
     padding: 12px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0px;
+    
 }
-.section .box .title:after {
-    border-top:0px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(218, 120, 41);
-    content:"";
-    position:absolute;
-    bottom:-10px;
-    left:30px;
-}
+
+
 .section .box .title2 {
     position: relative;
     text-align: center;
@@ -87,16 +141,7 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0px;
 }
-.section .box .title2:after {
-    border-top:0px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(55, 89, 140);
-    content:"";
-    position:absolute;
-    bottom:-10px;
-    left:30px;
-}
+
 .section .box .title3 {
     position: relative;
     text-align: center;
@@ -108,22 +153,13 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0px;
 }
-.section .box .title3:after {
-    border-top:0px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(131, 168, 68);
-    content:"";
-    position:absolute;
-    bottom:-10px;
-    left:30px;
-}
+
 .section .box ul {
     margin: 0;
     padding: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 30px;
+    padding-left: 40px;
     color: rgb(220,220,220); 
     list-style: none;
 }
@@ -138,3 +174,120 @@ a {
     color: rgb(75, 118, 182); 
     font-weight: 400;
 }
+<<<<<<< HEAD
+=======
+
+.cate-box {
+    margin-top: 50px;
+ 
+}
+
+.box-container p {
+    margin-top: 45px;   
+ }
+
+
+.card-container {
+  cursor: pointer;
+  perspective: 600;
+  position: relative;
+  width: 60%;
+  
+}
+/* card1 */
+.card1 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card1:hover {
+  transform: rotateY(180deg);
+}
+.card1 .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card1 img {
+  max-width: 660px;
+  opacity: 0.8;
+}
+.card1 .back {
+  padding-top: 50px;
+  color:rgb(218, 120, 41); 
+  font-weight: 500;
+  font-size: 13px;
+  transform: rotateY(180deg);
+  
+}
+
+/* card2 */
+.card2 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card2:hover {
+  transform: rotateY(180deg);
+}
+.card2 .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card2 img {
+  max-width: 660px;
+  opacity: 0.8;
+}
+.card2 .back {
+  padding-top: 60px;
+  color:rgb(55, 89, 140);
+  font-weight: 500;
+  font-size: 13px;
+  transform: rotateY(180deg);
+}
+
+
+/* card3 */
+.card3 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card3:hover {
+  transform: rotateY(180deg);
+}
+.card3 .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card3 img {
+  max-width: 660px;
+  opacity: 0.8;
+}
+.card3 .back {
+  padding-top: 60px;
+  color:rgb(131, 168, 68);
+  font-weight: 500;
+  font-size: 13px;
+  transform: rotateY(180deg);
+  
+}
+
+>>>>>>> main
