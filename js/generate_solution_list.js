@@ -2,14 +2,23 @@ $(document).ready(function () {
     generate_list();
 });
 
-
+// id="solution-contents"에 리스트를 생성합니다.
 function generate_list() {
     $.getJSON("./config/mapping.json", null,
         function (data, _textStatus, _jqXHR) {
-            var container = $('#box-container').empty();
+            var container = $('#solution-contents').empty();
             $.each(data.mapping, function (_index, element) { 
                 if(element.title == '솔루션'){
                     $.each(element.contents, function (_index, element) { 
+
+                        // E-PROCESS, E-KNOWLEDGE, E-WIRELESS는 생성하지 않습니다.
+                        if(element.title == 'E-PROCESS')
+                            return true;
+                        if(element.title == 'E-KNOWLEDGE')
+                            return true;
+                        if(element.title == 'E-WIRELESS')
+                            return true;
+
                         var box = $('<div>')
                             .appendTo(container)
                             .addClass('content-box');
