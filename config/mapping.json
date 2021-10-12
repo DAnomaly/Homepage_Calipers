@@ -96,29 +96,28 @@
                 },
                 {
                     "title" : "ECM",
-                    "href" : "solution_ECM.html",
+                    "href" : "solution_ecm.html",
                     "contents" : [
                         {
                             "title" : "BPM",
-                            "href" : "solution_ECM_BPM.html"
+                            "href" : "solution_ecm_bpm.html"
                         },
                         {
                             "title" : "CM",
-                            "href" : "solution_ECM_CM.html"
+                            "href" : "solution_ecm_cm.html"
                         },
                         {
                             "title" : "WCM",
-                            "href" : "solution_ECM_WCM.html"
+                            "href" : "solution_ecm_wcm.html"
                         },
                         {
                             "title" : "IM",
-                            "href" : "solution_ECM.html"
+                            "href" : "solution_ecm_im.html"
                         }
                     ]
                 },
                 {
                     "title" : "OTHER",
-                    "href" : "solution_other_accesslist.html",
                     "contents" : [
                         {
                         "title" : "전자명부",

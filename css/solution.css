@@ -21,6 +21,10 @@
 .section .box-container h4 {
      font-size: 18px;
 }
+.section .box-container h5 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
 .section .box-container dt {
     margin: 0;
     padding: 0;

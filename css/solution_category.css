@@ -145,7 +145,7 @@ body > .section-4 > .content-box a {
     text-decoration: none;
     line-height: 35px;
 }
-body > .section-4 > .content-box a:hover {
+body > .section-4 > .content-box a[href]:hover {
     text-decoration: underline;
 }
 
