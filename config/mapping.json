@@ -133,15 +133,15 @@
             "contents" : [
                 {
                     "title" : "보험",
-                    "href" : "industry_insurance.html"
+                    "href" : "industry.html#tab1"
                 },
                 {
                     "title" : "카드",
-                    "href" : "industry_card.html"
+                    "href" : "industry.html#tab2"
                 },
                 {
                     "title" : "은행",
-                    "href" : "industry_bank.html"
+                    "href" : "industry.html#tab3"
                 }
             ]
         }
