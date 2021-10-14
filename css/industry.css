@@ -217,10 +217,11 @@ a {
 }
 .card1 .back {
   padding-top: 50px;
-  color:rgb(218, 120, 41); 
-  font-weight: 500;
-  font-size: 13px;
+  color:#414141;
+  font-size: 14px;
   transform: rotateY(180deg);
+  word-break : keep-all;
+  word-wrap : break-word;
   
 }
 
@@ -249,10 +250,11 @@ a {
 }
 .card2 .back {
   padding-top: 60px;
-  color:rgb(55, 89, 140);
-  font-weight: 500;
-  font-size: 13px;
+  color:414141;
+  font-size: 14px;
   transform: rotateY(180deg);
+  word-break : keep-all;
+  word-wrap : break-word;
 }
 
 
@@ -279,12 +281,14 @@ a {
   max-width: 660px;
   opacity: 0.8;
 }
+
 .card3 .back {
+
   padding-top: 60px;
-  color:rgb(131, 168, 68);
-  font-weight: 500;
-  font-size: 13px;
+  color:414141;
+  font-size: 14px;
   transform: rotateY(180deg);
-  
+  word-break : keep-all;
+  word-wrap : break-word;
 }
 
