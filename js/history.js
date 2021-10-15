@@ -28,7 +28,7 @@ function loadJson() {
                 $('<div>')
                     .append(
                         $('<span>')
-                            .html('<i class="fas fa-check"></i>')
+                            .html('<i class="fas fa-chevron-right"></i>')
                             .attr('id','check-' + year)
                             .addClass('check')
                             .hide())
@@ -78,6 +78,10 @@ function loadJson() {
 
 }
 
+
+
+
+
 let showYear = 0;
 function yearOnClickEvent(year) {
     if(showYear == year){
@@ -93,3 +97,6 @@ function yearOnClickEvent(year) {
     $('#check-' + showYear).show(3);
     $('#content-' + showYear).slideDown();
 }
+
+
+

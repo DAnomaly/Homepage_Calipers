@@ -22,16 +22,21 @@ body > .tab a {
 }
 
 #tab1 p {
-    color: rgb(218, 120, 41);
-    font-weight: bold;
+    font-size: 17px;
+    line-height:35px;
+    text-shadow: 5px 5px 10px rgb(223, 156, 102);
 }
+
+
 #tab2 p {
-    color: rgb(55, 89, 140);
-    font-weight: bold;
+    font-size: 17px;
+    line-height:35px;
+    text-shadow: 5px 5px 10px rgb(138, 166, 207); 
 }
 #tab3 p {
-    color: rgb(131, 168, 68);
-    font-weight: bold;
+    font-size: 17px;
+    line-height:35px;
+    text-shadow: 5px 5px 10px rgb(167, 192, 124);
 }
 
 body > .tab a:nth-of-type(1) { background-color: rgb(218, 120, 41); }
@@ -92,9 +97,6 @@ body > .tab a:nth-of-type(3) { background-color: rgb(131, 168, 68); }
     max-width: 60%;
 }
 
-.text-box2 p{
-   font-size: 15px;
-}
 
 .section .box-container {
     display: flex;
@@ -106,6 +108,7 @@ body > .tab a:nth-of-type(3) { background-color: rgb(131, 168, 68); }
 }
 .section .box {
     width: 350px;
+    height: 380px;
     box-sizing: border-box;
     background-color: rgb(224, 224, 224);
     border-top-right-radius: 5px;
@@ -176,8 +179,6 @@ a {
 
 .cate-box {
     height: 50vh;
-  
- 
 }
 
 .box-container p {
@@ -205,7 +206,7 @@ a {
 }
 .card1 .side {
   backface-visibility: hidden;
-  border-radius: 6px;
+  border-radius: 9px;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -213,12 +214,9 @@ a {
 }
 .card1 img {
   max-width: 660px;
-  opacity: 0.8;
+   opacity: 0.9; 
 }
 .card1 .back {
-  padding-top: 50px;
-  color:#414141;
-  font-size: 14px;
   transform: rotateY(180deg);
   word-break : keep-all;
   word-wrap : break-word;
@@ -238,7 +236,7 @@ a {
 }
 .card2 .side {
   backface-visibility: hidden;
-  border-radius: 6px;
+  border-radius: 9px;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -246,12 +244,9 @@ a {
 }
 .card2 img {
   max-width: 660px;
-  opacity: 0.8;
+  opacity: 0.9; 
 }
 .card2 .back {
-  padding-top: 60px;
-  color:414141;
-  font-size: 14px;
   transform: rotateY(180deg);
   word-break : keep-all;
   word-wrap : break-word;
@@ -271,7 +266,7 @@ a {
 }
 .card3 .side {
   backface-visibility: hidden;
-  border-radius: 6px;
+  border-radius: 9px;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -279,14 +274,11 @@ a {
 }
 .card3 img {
   max-width: 660px;
-  opacity: 0.8;
+   opacity: 0.9; 
 }
 
 .card3 .back {
 
-  padding-top: 60px;
-  color:414141;
-  font-size: 14px;
   transform: rotateY(180deg);
   word-break : keep-all;
   word-wrap : break-word;
