@@ -35,7 +35,8 @@ function loadJson() {
                     .append(
                         $('<a>')
                             .text(year)
-                            .attr('href','javascript:yearOnClickEvent(' + year + ');'))
+                            .attr('onclick','yearOnClickEvent(this, ' + year + ');')
+                            .attr('href','javascript:void(0);'))
                     .appendTo($section)
                     .addClass("year");
 
@@ -79,24 +80,27 @@ function loadJson() {
 }
 
 
-
-
-
 let showYear = 0;
-function yearOnClickEvent(year) {
+function yearOnClickEvent(loc, year) {
+
+    // 연혁 보이기 / 숨기기
     if(showYear == year){
         $('.check').hide();
         $('.contentDiv').slideUp();
         showYear = 0;
-        return;
+    } else {
+        showYear = year;
+    
+        $('.check').hide();
+        $('.contentDiv').slideUp();
+        $('#check-' + showYear).show(3);
+        $('#content-' + showYear).slideDown();
     }
-    showYear = year;
 
-    $('.check').hide();
-    $('.contentDiv').slideUp();
-    $('#check-' + showYear).show(3);
-    $('#content-' + showYear).slideDown();
+    // 해당 연혁으로 스크롤
+    setTimeout(function(){
+        $('html, body').animate({
+             scrollTop: $(loc).offset().top - 180
+        }, 0);
+    }, 400)
 }
-
-
-

@@ -82,7 +82,7 @@ body {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.152);
     box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 5px 0px;
-    z-index: 1;
+    z-index: 9;
 }
 
 #top-container #sub-menu :is(ul,li,a) {
