@@ -1,46 +1,40 @@
 @charset "UTF-8";
 
-.background {
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    overflow: unset;
-    z-index: -1;
+html {
+    scroll-behavior: smooth;
 }
 
-.background img {
-    position: absolute;
-    width: 100%;
-    height: 1100px;
-    object-fit: cover;
-    z-index: -2;
-}
-.background-box1 {
-    background: black;
-    opacity: 0.5;
-    width: 100%;
-    height: 1100px;
-}
-
- /* .background-box2 {
-    background-color: rgb(0,0,0);
-    width: 100%;
-    height: 300px;
-}   */
- 
 hr {
     margin-top: 30px;
-   
     border: solid 1px;
     color: rgb(233, 223, 223);
     width: 50%;
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
 
-body > .header > p {
+.section-container {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/history_banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.section-container > .header {
+    position: sticky;
+    top: -90px;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/history_banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    /* box-shadow: 0 30px 20px rgb(0,0,0, 0.6); */
+}
+
+.section-container > .header > p {
     margin: 0 auto;
-    margin-top: 120px;
     padding: 0px 23vw;
+    padding-top: 120px;
     color: rgb(255,255,255);
     font-size: 32px;
     text-shadow: 3px 3px 2px rgb(0,0,0);
@@ -49,18 +43,11 @@ body > .header > p {
 }
 
 #section {
-    overflow: scroll;
-    -ms-overflow-style: none;
-    color: rgb(255,255,255);
-    padding: 0px 31vw;
-    height: 700px;
     margin: 0 auto;
     margin-top: 60px;
-    margin-bottom: 80px;
-}
-#section::-webkit-scrollbar { 
-    display: none;
-    width: 0 !important;
+    padding: 0px 31vw;
+    padding-bottom: 80px;
+    color: rgb(255,255,255);
 }
 
 #section a {
@@ -77,21 +64,20 @@ body > .header > p {
 #section p {
     position: relative;
     margin:10px 0;
-    left: 120px;
+    left: 60px;
     color: rgb(246,246,246);
     animation-duration: 1s;
     animation-name: slidein;
-     }
+    white-space: nowrap;
+}
 
-     @keyframes slidein {
-        from {
-          margin-left: 30%;
-          width: 300%
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
+@keyframes slidein {
+    from {
+        margin-left: 30%;
+    }
+
+    to {
+        margin-left: 0%;
     }   
 }
 #section p > .month {
