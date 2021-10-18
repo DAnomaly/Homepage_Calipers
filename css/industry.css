@@ -185,13 +185,10 @@ a {
     margin-top: 45px;   
  }
 
-
 .card-container {
   cursor: pointer;
-  perspective: 600;
   position: relative;
   width: 60%;
-  
 }
 /* card1 */
 .card1 {
@@ -201,7 +198,7 @@ a {
   transition: all 1s ease-in-out;
   width: 100%;
 }
-.card1:hover {
+.card-container:hover > div {
   transform: rotateY(180deg);
 }
 .card1 .side {
