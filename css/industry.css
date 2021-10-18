@@ -64,17 +64,17 @@ body > .tab a:nth-of-type(3) { background-color: rgb(131, 168, 68); }
     font-size: 30px;
     animation-duration: 1s;
     animation-name: slidein;
-     }
+}
 
-     @keyframes slidein {
-        from {
-          margin-left: 30%;
-          width: 300%
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
+@keyframes slidein {
+    from {
+        margin-left: 30%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
     }   
 }
 
