@@ -143,9 +143,12 @@ html {
     }
 }
 @media all and (max-width:760px) {
+    .section-3 {
+        padding-top: 10vh;
+    }
     .section-3 .box .icon-box {
         font-size: 38px;
-        padding: 16px 0; 
+        padding: 8px 0; 
     }
     .section-3 .box .title {
         font-size: 18px;
@@ -156,6 +159,7 @@ html {
 }
 @media all and (max-width:700px) {
     .section-3 .box-container {
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -167,9 +171,35 @@ html {
     }
     .section-3 .box {
         max-width: 130px;
+        min-width: 130px;
         margin: 10px 25px;
     }
 }
+@media all and (max-width:400px) {
+    .section-3 {
+        padding-top: 10vh;
+    }
+    .section-3 .box-container {
+        margin-top: 10px;
+    }
+    .section-3 .box {
+        max-width: 100px;
+        min-width: 100px;
+        margin: 10px 10px;
+        box-sizing: border-box;
+    }
+    .section-3 .box .icon-box {
+        font-size: 28px;
+        padding: 10px 0; 
+    }
+    .section-3 .box .title {
+        font-size: 14px;
+    }
+    .section-3 .box .text-box {
+        font-size: 12px;
+    }
+}
+
 
 /* section-4 */
 .section-4 {
