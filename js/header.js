@@ -44,8 +44,8 @@ function generateHeader() {
         )
         .append($mainMenu);
 
-    // config/mapping.json의 내용을 가져옵니다.
-    $.getJSON("./config/mapping.json", "GET",
+    // config/mapping.html의 내용을 가져옵니다.
+    $.getJSON("/config/mapping.html", null,
         function (data, _textStatus, _jqXHR) {
             let mapping = data.mapping;
             

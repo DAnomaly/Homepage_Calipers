@@ -7,7 +7,7 @@ function loadJson() {
     let $section = $('#section').empty();
     if($section[0] == null) return;
 
-    $.getJSON("./config/history.json", 
+    $.getJSON("./config/history.html", 
         function (data, _textStatus, _jqXHR) {
 
             // console.log(Object.keys(data));
