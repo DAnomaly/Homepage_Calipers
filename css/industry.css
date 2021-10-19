@@ -96,13 +96,9 @@ body > .tab a:nth-of-type(3) { background-color: rgb(131, 168, 68); }
     display: flex;
     max-width: 60%;
 }
-
-
 .section .box-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1500px;
-    min-width: 720px;
     margin: 0 auto;
   
 }
@@ -166,7 +162,7 @@ body > .tab a:nth-of-type(3) { background-color: rgb(131, 168, 68); }
     list-style: none;
 }
 .section .box ul li {
-    font-size: 13px;;
+    font-size: 13px;
     color: rgb(71, 68, 68);
     margin: 8px 0;
     padding: 0;
@@ -281,3 +277,108 @@ a {
   word-wrap : break-word;
 }
 
+
+
+@media screen and (max-width:1200px)and (min-width: 900px)  {
+  .section h2 {
+    font-size: 60px;
+    padding: 20px;
+    margin-bottom: 10px;
+} 
+  .section p {
+    padding: 20px;
+    font-size: 20px;
+  } 
+  .cate-box {
+    height:500px;
+}
+  .section .box-container {
+   margin: 20px;
+  }
+  
+  .section .box {
+    width: 370px;
+    height: 420px;
+    margin: 0 auto;
+}
+  #tab1 p {
+    font-size: 16px;
+    line-height:35px;
+    text-shadow: 5px 5px 10px rgb(223, 156, 102);
+  }
+  #tab2 p {
+    font-size: 16px;
+    line-height:35px;
+    text-shadow: 5px 5px 10px rgb(138, 166, 207); 
+  }
+  #tab3 p {
+    font-size: 16px;
+    line-height:35px;
+    text-shadow: 5px 5px 10px rgb(167, 192, 124);
+  }
+}
+
+
+@media screen and (max-width:800px)and (min-width: 420px)  {
+  .section h2 {
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+} 
+  .section p {
+    padding: 20px;
+    font-size: 20px;
+  } 
+  .cate-box {
+    height:500px;
+}
+  .section .box-container {
+   margin: 20px;
+
+  }
+  .section .box {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+}
+  #tab1 p {
+    font-size: 13px;
+    line-height:28px;
+    text-shadow: 5px 5px 10px rgb(223, 156, 102);
+  }
+  #tab2 p {
+    font-size: 13px;
+    line-height:28px;
+    text-shadow: 5px 5px 10px rgb(138, 166, 207); 
+  }
+  #tab3 p {
+    font-size: 13px;
+    line-height:28px;
+    text-shadow: 5px 5px 10px rgb(167, 192, 124);
+  }
+}
+  @media screen and (max-width:420px) {
+    .section h2 {
+      font-size: 25px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .section p {
+      font-size: 12px;
+      padding: 10px;
+    } 
+    .cate-box {
+      height:500px;
+  }
+    .section .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  
+  }
+    .section .box {
+        width: 350px;
+        height: 420px;
+        margin: 0 auto;
+    }
+  }

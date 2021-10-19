@@ -11,11 +11,6 @@ hr {
     width: 45%;
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
-@media screen and (max-width:1200px) {
-  hr{
-      width: 80%;
-  }
-}
 
 .section-container {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/history_banner.jpg);
@@ -80,8 +75,12 @@ hr {
 }
 
 @media screen and (max-width:420px) {
+    hr{
+        width: 80%;
+    }
+
    #section{
-       width: 70%;
+       width: 65%;
        margin-top: 30px;
   
    }
@@ -95,11 +94,30 @@ hr {
    
    .section-container > .header > p {
    font-size: 25px;
-   }
-  
-
-   
+   }  
 }
+
+@media screen and (max-width:1200px)and (min-width: 420px)  {
+    hr{
+        width: 80%;
+    }
+    #section{
+        width: 65%;
+        margin-top: 60px;
+   
+    }
+    #section a {
+        font-size: 40px;
+    }
+    #section p {
+       font-size: 20px;
+       white-space: pre-wrap;
+    }
+    
+    .section-container > .header > p {
+    font-size: 50px;
+    }  
+  }
 
 
 @keyframes slidein {
