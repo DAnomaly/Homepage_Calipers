@@ -72,7 +72,13 @@ function generateHeader() {
                 .appendTo(
                     $('<li>').appendTo($mainMenu)
                 )
-                .attr('href', 'javascript:show_submenu();')
+                .attr('href', 'javascript:void(0);')
+                .click(function (e) { 
+                    if($('#sub-menu').hasClass('nav-open'))
+                        hide_submenu();
+                    else
+                        show_submenu();
+                });
 
             // sub-menu
             // sub-menu에 메뉴를 생성합니다

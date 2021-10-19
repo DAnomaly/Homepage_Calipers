@@ -15,9 +15,6 @@ body {
     animation-name: nav-color;
     background-color: #444e;
 }
-#top-container :is(#sub-menu,#header).nav-open a{
-    color: #fff;
-}
 @keyframes nav-color{
     from {
         background-color: #fff;
@@ -26,6 +23,11 @@ body {
         background-color: #444e;
     }
 }
+
+#top-container :is(#sub-menu,#header).nav-open a{
+    color: #fff;
+}
+
 #top-container :is(#sub-menu,#header).nav-close {
     animation-duration: 0.8s;
     animation-name: nav-back;
@@ -49,7 +51,6 @@ body {
     margin: 0 auto;
     padding: 5px;
     padding-top: 35px;
-    min-width: 600px;
     max-width: 1200px;
 }
 #top-container #header .logo{
@@ -74,6 +75,21 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+@media all and (max-width: 680px) {
+    #top-container #header > div {
+        padding-top: 20px;
+    }
+    #top-container #header ul li {
+        display: none;
+    }
+    #top-container #header ul li:last-of-type {
+        display: block;
+    }
+    #top-container #header .logo{
+        width: 190px;
+    }
+}
+
 
 /* top-container nav */
 #top-container #sub-menu {
@@ -129,6 +145,45 @@ body {
     font-size: 14px;
 }
 
+/* top-container nav : */
+@media all and (max-width: 930px) and (min-width: 520px) {
+    #top-container #sub-menu > ul > li:nth-child(2) > ul {
+        display: inherit;
+    }
+    #top-container #sub-menu > ul > li:nth-child(2) > ul > li {
+        font-weight: normal;
+    }
+    #top-container #sub-menu > ul > li > ul > li > ul {
+        display: none;
+    }
+}
+
+@media all and (max-width: 520px) {
+    #top-container #sub-menu > ul {
+        display: block;
+        width: 95%;
+        margin: 0 10px;
+        padding: 10px 0;
+    }
+    #top-container #sub-menu > ul > li {
+        border-right: none;   
+        border-bottom: 1px solid #aaa;
+    }
+    #top-container #sub-menu > ul > li:last-child  {
+        border-bottom: none;
+    }
+    #top-container #sub-menu > ul > li:nth-child(2) > ul {
+        display: inherit;
+    }
+    #top-container #sub-menu > ul > li:nth-child(2) > ul > li {
+        font-weight: normal;
+    }
+    #top-container #sub-menu > ul > li > ul > li > ul {
+        display: none;
+    }
+}
+
+
 /* bottom-container */
 #bottom-container {
     background-color: rgb(104, 165, 196);
@@ -156,6 +211,41 @@ body {
     font-weight: bold;
     color: rgb(255, 255, 255)
 }
+
+@media all and (max-width: 1000px) and (min-width: 720px) {
+    #bottom-container > div {
+        width: 100%;
+    }
+
+    #bottom-container > div > div {
+        width: 50%;
+        word-break: keep-all;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #bottom-container img {
+        padding-top: 15px;
+        width: 220px;
+    }
+
+    #bottom-container > div {
+        display: block;
+        width: 100%;
+        padding-left: 25px;
+    }
+
+    #bottom-container > div > div {
+        padding: 0;
+        width: 100%;
+        word-break: keep-all;
+        padding: 10px 0;
+    }
+    #bottom-container > div > div > p {
+        margin: 8px 0;
+    }
+}
+
 
 /* top-button */
 #top-button {
