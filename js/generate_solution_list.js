@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 // id="solution-contents"에 리스트를 생성합니다.
 function generate_list() {
-    $.getJSON("./config/mapping.json", null,
+    $.getJSON("./config/mapping.html", null,
         function (data, _textStatus, _jqXHR) {
             var container = $('#solution-contents').empty();
             $.each(data.mapping, function (_index, element) { 
