@@ -11,6 +11,11 @@ hr {
     width: 45%;
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
+@media screen and (max-width:1200px) {
+  hr{
+      width: 80%;
+  }
+}
 
 .section-container {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/history_banner.jpg);
@@ -31,6 +36,7 @@ hr {
     /* box-shadow: 0 30px 20px rgb(0,0,0, 0.6); */
 }
 
+
 .section-container > .header > p {
     margin: 0 auto;
     padding: 0px 23vw;
@@ -45,10 +51,11 @@ hr {
 #section {
     margin: 0 auto;
     margin-top: 60px;
-    padding: 0px 33vw;
+    width: 35%;
     padding-bottom: 80px;
     color: rgb(255,255,255);
 }
+
 
 #section a {
     color: rgb(255,255,255);
@@ -58,18 +65,40 @@ hr {
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
 
+ @media screen and (max-width:600px) {
+    #section{
+        width: 70%;
+        margin-top: 30px;
+    }
+    #section a {
+        font-size: 20px;
+    }
+    #section p {
+       font-size: 5px;
+    }
+    
+    .section-container > .header > p {
+    font-size: 25px;
+    }
+   
+
+    
+}
+
 #section i {
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
 #section p {
     position: relative;
     margin:10px 0;
-    left: 65px;
+    left: 5vw;
     color: rgb(246,246,246);
     animation-duration: 1s;
     animation-name: slidein;
     white-space: nowrap;
 }
+
+
 
 @keyframes slidein {
     from {
@@ -84,6 +113,14 @@ hr {
     display: inline-block;
     margin-right: 40px;
 }
+
+@media screen and (max-width:600px) {
+    #section p > .month {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+  }
 
 #section .year {
     position: relative;
