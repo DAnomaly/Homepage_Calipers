@@ -23,3 +23,15 @@
     margin: 0;
     padding-top: 120px;
 }
+/* mobile */
+@media all and (max-width: 620px) {
+    #title-banner img.banner {
+        height: 160px;
+    }
+    #title-banner > div {
+        height: 160px;
+    }
+    #title-banner > div > h3 {
+        padding-top: 60px;
+    }
+}
