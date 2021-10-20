@@ -17,6 +17,32 @@
         <script src="./js/header.js" charset="UTF-8"></script>
         <script src="./js/generate_solution_list.js" charset="UTF-8"></script>
         
+        <style>
+           @media all and (max-width:1200px)and (min-width: 600px)  {
+            .section {
+                    width: 100%;
+                }
+                .section .box-container {
+                    padding: 30px 0;
+                }
+            }
+           @media all and (max-width: 600px)and (min-width: 420px)   {
+            .section  {
+                   width: 100%;
+                }
+            .section img {
+                    width: 300px;
+                }   
+            }
+           @media all and (max-width: 420px)  {
+            .section {
+                   width: 100%;
+                }
+            .section img{
+                   width: 250px;
+            }   
+            }
+        </style>
     </head>
     <body>
         <div id="top-container"></div>
@@ -29,12 +55,11 @@
         
         <!-- nav-bar -->
         <div id="nav-bar" data-title="전자명부"></div>
-
+        
         <div class="section">
-
             <div class="box-container">
                 <div class="box" style="width: 100%; text-align: center;">
-                    <img src="./img/prod_attand.jpg">
+                    <img src="./img/prod_attand.jpg" >
                 </div>
             </div>
 

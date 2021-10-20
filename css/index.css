@@ -224,6 +224,7 @@ html {
         padding: 4px 0;
         font-weight: bold;
     }
+
 }
 
 /* section-4 */
@@ -231,7 +232,7 @@ html {
     display: flex;
     align-items: center;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     background-color:rgb(43, 76, 126);
     opacity: 0.9;
     box-sizing: border-box;
@@ -554,6 +555,17 @@ html {
 }
 @media all and (max-width:720px) {
     .section-6 {
-        display: none;
+        padding: 10px 0;
+    }
+    .section-6 .partners img {
+        max-width: 40px;
+    }
+}
+@media all and (max-width:340px) {
+    .section-6 {
+        padding: 10px 0;
+    }
+    .section-6 .partners img {
+        max-width: 30px;
     }
 }
