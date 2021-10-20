@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+.wp-10 {width: 10%;}
+.wp-20 {width: 20%;}
+.wp-30 {width: 30%;}
+.wp-40 {width: 40%;}
+.wp-50 {width: 50%;}
+.wp-60 {width: 60%;}
+.wp-70 {width: 70%;}
+.wp-80 {width: 80%;}
+.wp-90 {width: 90%;}
+
 /* section */
 .section {
     width: 1200px;
@@ -6,7 +17,7 @@
     margin: 0 auto;
     word-break: keep-all;
 }
-/* 
+/* PC */
 @media all and (max-width: 1280px) {
     .section {
         width: auto;
@@ -14,10 +25,30 @@
         padding: 40px;
     }
 } 
-*/
+/* mobile */
+@media all and (max-width: 620px) {
+    .section {
+        padding: 10px;
+    }
+}
 
 .section img {
     object-fit: cover;
+}
+/* templet */
+@media all and (max-width:1200px) {
+    .section .img-box {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+/* mobile */
+@media all and (max-width: 620px) {
+    .section img {
+        width: 100%;
+    }
 }
 
 /* box-container */
@@ -30,6 +61,9 @@
 }
 .section .box-container h4 {
      font-size: 18px;
+}
+.section .box-container h4 > span {
+     font-size: 15px;
 }
 .section .box-container h5 {
     color: rgb(0, 0, 0);
@@ -76,6 +110,45 @@
     background-color: rgb(235, 235, 235);
     font-weight: bold;
     text-align: center;
+}
+/* templet */
+@media all and (max-width:1200px) {
+    .section .box-container {
+        display: block;
+        justify-content: inherit;
+    }
+    .section .box-container .box {
+        padding: 10px;
+        width: auto;
+    }
+    .section .box-container .title-box {
+        width: fit-content;
+        margin: 10px auto;
+        padding: 10px 60px;
+        border: 1px solid rgb(198, 198, 198);
+        border-radius: 10px;
+        background-color: rgb(235, 235, 235);
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+/* mobile */
+@media all and (max-width: 620px) {
+    .section .box-container {
+        font-size: 12px;
+    }
+    .section .box-container h4 {
+         font-size: 15px;
+    }
+    .section .box-container h4 > span {
+         font-size: 13px;
+    }
+    .section .box-container h5 {
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+    }
+    
 }
 
 /* col-lg */
