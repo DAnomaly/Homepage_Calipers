@@ -231,7 +231,7 @@ body {
     }
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 720px) and (min-width: 350px) {
     #bottom-container img {
         display: none;
     }
@@ -242,6 +242,26 @@ body {
         padding-left: 25px;
     }
 
+    #bottom-container > div > div {
+        padding: 2px 0;
+        width: 100%;
+        word-break: keep-all;
+        font-size: 10px;
+    }
+    #bottom-container > div > div > p {
+        margin: 8px 0;
+    }
+}
+@media all and (max-width: 350px)  {
+    #bottom-container img {
+        display: none;
+    }
+
+    #bottom-container > div {
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+    }
     #bottom-container > div > div {
         padding: 2px 0;
         width: 100%;
