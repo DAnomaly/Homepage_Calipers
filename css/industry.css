@@ -287,7 +287,7 @@ a {
 } 
   .section p {
     padding: 20px;
-    font-size: 20px;
+    font-size: 22px;
   } 
   .cate-box {
     height:500px;
@@ -319,7 +319,7 @@ a {
 }
 
 
-@media screen and (max-width:800px)and (min-width: 420px)  {
+@media screen and (max-width:800px)and (min-width: 600px)  {
   .section h2 {
     font-size: 40px;
     padding: 20px;
@@ -357,14 +357,14 @@ a {
     text-shadow: 5px 5px 10px rgb(167, 192, 124);
   }
 }
-  @media screen and (max-width:420px) {
+  @media screen and (max-width:600px) {
     .section h2 {
       font-size: 25px;
       padding: 10px;
       margin-bottom: 10px;
     }
     .section p {
-      font-size: 12px;
+      font-size: 13px;
       padding: 10px;
     } 
     .cate-box {

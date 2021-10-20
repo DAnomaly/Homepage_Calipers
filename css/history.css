@@ -74,30 +74,7 @@ hr {
     white-space: nowrap;
 }
 
-@media screen and (max-width:420px) {
-    hr{
-        width: 80%;
-    }
-
-   #section{
-       width: 65%;
-       margin-top: 30px;
-  
-   }
-   #section a {
-       font-size: 20px;
-   }
-   #section p {
-      font-size: 5px;
-      white-space: pre-wrap;
-   }
-   
-   .section-container > .header > p {
-   font-size: 25px;
-   }  
-}
-
-@media screen and (max-width:1200px)and (min-width: 420px)  {
+@media screen and (max-width:1200px)and (min-width: 600px)  {
     hr{
         width: 80%;
     }
@@ -115,7 +92,7 @@ hr {
     }
     
     .section-container > .header > p {
-        font-size: 40px;
+        font-size: 30px;
     }  
   }
 
@@ -137,10 +114,32 @@ hr {
 @media screen and (max-width:600px) {
     #section p > .month {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 12px;
     }
+    #section a {
+        font-size: 20px;
+    }
+    .section-container > .header > p {
+        font-size: 23px;
     
-  }
+    }
+    hr{
+        width: 80%;
+    }
+
+   #section{
+       width: 65%;
+       margin-top: 30px;
+  
+   }
+   #section a {
+       font-size: 20px;
+   }
+   #section p {
+      font-size: 13px;
+      white-space: pre-wrap;
+   }
+}
 
 #section .year {
     position: relative;
@@ -151,3 +150,4 @@ hr {
     position: absolute;
     left: -25px;
 }
+
