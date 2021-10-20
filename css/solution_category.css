@@ -25,6 +25,28 @@ body > .nav-bar a:nth-of-type(1) { width: 33.3%; background-color: rgb(218, 120,
 body > .nav-bar a:nth-of-type(2) { width: 33.4%; background-color: rgb(55, 89, 140); }
 body > .nav-bar a:nth-of-type(3) { width: 33.3%; background-color: rgb(131, 168, 68); }
 
+@media all and (max-width: 620px) {
+    body > .nav-bar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    body > .nav-bar a {
+        display: block;
+        padding: 13px 0;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+}
+
+
 /* section */
 body > .section {
     width: 100%;
@@ -58,12 +80,12 @@ body > .section :is(h2, h3) {
 /* section box-container */
 body > .section > .box-container {
     display: flex;
-    justify-content: space-between;
     width: 980px;
     margin: 0 auto;
     padding-top: 60px;
 }
 body > .section > .box-container .content-box {
+    width: 100%;
     margin: 0 10px;
     cursor: pointer;
 }
@@ -84,6 +106,66 @@ body > .section > .box-container .content {
     padding: 0;
     padding-top: 10px;
     font-size: 15px;
+    word-break: keep-all;
+}
+
+/* tablet */
+@media all and (max-width: 1000px) {
+    body > .section > .box-container {
+        width: auto;
+        padding: 0 20px;
+        padding-top: 60px;
+    }
+}
+
+/* mobile */
+@media all and (max-width: 620px) {
+    /* section */
+    body > .section {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 2px;
+    }
+    body > .section h2 {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    body > .section h3 {
+        padding-top: 8px;
+        font-size: 16px;
+    }
+    
+    /* section box-container */
+    body > .section > .box-container {
+        display: block;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        padding-top: 0;
+    }
+    body > .section > .box-container .content-box {
+        width: auto;
+        margin: 10px;
+        cursor: pointer;
+    }
+    body > .section > .box-container img {
+        height: 98px;
+    }
+    body > .section > .box-container .title {
+        padding-top: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        word-break: keep-all;
+    }
+    body > .section > .box-container .content {
+        padding-top: 5px;
+        margin-bottom: 14px;
+        font-size: 13px;
+        word-break: keep-all;
+        text-align: center;
+    }
 }
 
 /* other-bar */
@@ -105,6 +187,28 @@ body > .other-bar .lapping-box {
 body > .other-bar .lapping-box span {
     display: inline-block;
     margin: 0 5px;
+}
+/* templet */
+@media all and (max-width:1060px) {
+    body > .other-bar .lapping-box {
+        width: auto;
+    }
+}
+/* mobile */
+@media all and (max-width: 620px) {
+    body > .other-bar {
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    body > .other-bar .lapping-box {
+        width: auto;
+        margin: 0;
+    }
+    body > .other-bar .lapping-box span {
+        display: inline-block;
+        margin: 0 5px;
+    }
 }
 
 /* section-4 */
@@ -160,4 +264,40 @@ body > .section-4 > .content-box > .title {
 body > .section-4 > .content-box > .title a {
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+/* templet */
+@media all and (max-width:1060px) {
+    body > .section-4 > .content-box {
+        width: auto;
+        margin: 0 40px;
+    }
+}
+
+/* mobile */
+@media all and (max-width: 620px) {
+    body > .section-4 {
+        margin: 0;
+        padding: 15px 0;
+    }
+    body > .section-4 > .content-box {
+        display: flex;
+        width: auto;
+        margin: 0 20px;
+        padding: 0;
+    }
+    
+    body > .section-4 > .content-box li {
+        margin: 0 6px;
+        padding: 0;
+    }
+    
+    body > .section-4 > .content-box a {
+        line-height: 30px;
+        font-size: 15px;
+    }
+    
+    body > .section-4 > .content-box > .title {
+        text-align: center;
+        width: 70px;
+    }
 }
