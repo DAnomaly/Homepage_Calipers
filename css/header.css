@@ -152,8 +152,6 @@ body {
     font-weight: normal;
     font-size: 14px;
 }
-
-/* top-container nav : */
 @media all and (max-width: 930px) and (min-width: 520px) {
     #top-container #sub-menu > ul > li:nth-child(2) > ul {
         display: inherit;
@@ -276,7 +274,7 @@ body {
 /* nav-bar */
 #nav-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
     padding: 16px 14px;
@@ -304,6 +302,7 @@ body {
 
 @media all and (max-width: 680px) {
     #nav-bar {
+        justify-content: space-between;
         padding: 10px 10px;
         width: 100%;
     }
