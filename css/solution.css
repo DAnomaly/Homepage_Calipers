@@ -13,7 +13,7 @@
 /* section */
 .section {
     width: 1200px;
-    min-height: 300px;
+    min-height: calc(100vh - 713px);
     margin: 0 auto;
     word-break: keep-all;
 }
@@ -21,7 +21,6 @@
 @media all and (max-width: 1280px) {
     .section {
         width: auto;
-        min-height: 300px;
         padding: 40px;
     }
 } 

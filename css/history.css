@@ -18,7 +18,6 @@ hr {
     background-attachment: fixed;
     background-position: center top;
 }
-
 .section-container > .header {
     position: sticky;
     top: -90px;
@@ -30,8 +29,6 @@ hr {
     background-position: center top;
     /* box-shadow: 0 30px 20px rgb(0,0,0, 0.6); */
 }
-
-
 .section-container > .header > p {
     margin: 0 auto;
     padding: 0px 23vw;
@@ -50,8 +47,6 @@ hr {
     padding-bottom: 80px;
     color: rgb(255,255,255);
 }
-
-
 #section a {
     color: rgb(255,255,255);
     /* font-weight: bold; */
@@ -59,8 +54,6 @@ hr {
     text-decoration: none;
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
-
-
 #section i {
     text-shadow: 3px 3px 2px rgb(0,0,0);
 }
@@ -82,8 +75,14 @@ hr {
         margin-left: 0%;
     }   
 }
-
-
+#section p > .month {
+    display: block;
+    margin-right: 40px;
+}
+#section p > .content {
+    display: block;
+    word-break: keep-all;
+}
 #section .year {
     position: relative;
     /* margin: 2px 0; */
@@ -92,14 +91,6 @@ hr {
 #section .year > .check {
     position: absolute;
     left: -25px;
-}
-#section p > .month {
-    display: block;
-    margin-right: 40px;
-}
-#section p > .content {
-    display: block;
-    word-break: keep-all;
 }
 
 
