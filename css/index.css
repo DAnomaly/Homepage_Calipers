@@ -19,16 +19,20 @@ html {
 /* section-1 */
 
 .section-1 {
-    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
     height: calc(100vh - 166px);
-    padding-top: 25vh;
     min-height: 600px;
+    background-color: rgba(0,0,0,0.6);
     color: rgb(255,255,255);
     text-align: center;
     box-sizing: border-box;
 }
+.section-1 > div {
+    width: 100%;
+}
 .section-1 :is(h2,h3,p) {
-    text-shadow: 5px 5px 2px rgba(30, 30, 30);
+    text-shadow: 5px 5px 2px rgba(30, 0, 30);
     word-break: keep-all;
 }
 .section-1 h2{ font-size: 50px; }
@@ -37,23 +41,16 @@ html {
 @media all and (max-width:680px) {
     .section-1 {
         height: calc(100vh - 116px);
-    }
-    .section-1 h2{ font-size: 40px; }
-    .section-1 h3{ font-size: 25px; }
-    .section-1 p{ font-size: 16px; }
-}
-@media all and (max-width:340px) {
-    .section-1 {
-        padding-top: 23vh;
-        height: calc(100vh - 113px);
+        min-height: 600px;
     }
     .section-1 h2{ font-size: 30px; }
     .section-1 h3{ font-size: 22px; }
     .section-1 p{ font-size: 12px; }
 }
-@media all and (min-height:1200px) {
+@media all and (max-width:340px) {
     .section-1 {
-        padding-top: 33vh;
+        height: calc(100vh - 113px);
+        min-height: 600px;
     }
 }
 
@@ -96,7 +93,7 @@ html {
     display: flex;
     align-items: center;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     background-color: rgba(0,0,0,0.6);
     box-sizing: border-box;
 }
@@ -292,17 +289,23 @@ html {
     padding-bottom: 20px;
     padding-left: 40px;
     color: rgb(220,220,220);
+    list-style: none;
 }
 .section-4 .box ul li {
+    display: flex;
     margin: 8px 0;
     padding: 0;
+}
+.section-4 .box ul li::before {
+    display: block;
+    content: "-ㅤ";
 }
 @media all and (max-width:680px) {
     .section-4 h3 {
         font-size: 23px;
     }
     .section-4 .box-container {
-        display: inherit;
+        display: block;
         justify-content: inherit;
         max-width: inherit;
         min-width: inherit;
@@ -311,11 +314,13 @@ html {
         padding: 0 50px;
     }
     .section-4 .box {
-        width: 100%;
         box-sizing: border-box;
-        background-color: rgba(255,255,255,0.2);
+        width: auto;
+        margin-bottom: 8px;
+        padding: 0;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+        background-color: rgba(255,255,255,0.2);
     }
     .section-4 .box .title {
         font-weight: bold;
@@ -325,17 +330,15 @@ html {
     .section-4 .box ul {
         display: grid;
         grid-template-columns: 50% 50%;
-        margin: 20px;
-        padding: 0;
-        padding-left: 10px;
-        padding-bottom: 10px;
+        margin: 0;
+        padding: 15px 10px;
     }
     .section-4 .box ul li {
-        margin: 0 14px;
+        margin: 1px 0;
         padding: 0;
+        padding-right: 3px;
         font-size: 12px;
     }
-    
 }
 
 /* section-5 */
