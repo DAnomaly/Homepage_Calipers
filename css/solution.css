@@ -37,12 +37,18 @@
 }
 /* templet */
 @media all and (max-width:1200px) {
+    
+    .section {
+        width: auto;
+        
+        min-height: 600px;
+        padding: 40px;
+    }
     .section .img-box {
         width: fit-content;
         margin: 0 auto;
         text-align: center;
     }
-
 }
 /* mobile */
 @media all and (max-width: 620px) {
