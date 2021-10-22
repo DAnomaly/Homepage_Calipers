@@ -585,6 +585,27 @@ html {
         max-width: 40px;
     }
 }
+
+
+@media all and (max-width:450px) {
+    .section-6{
+        overflow: hidden;
+        padding: 0px;
+      }
+      .partners{
+        position: relative;
+        display: flex;
+        transition: transform 0.5s;
+        padding: 0px;
+      }
+      .section-6 img{
+        width: 70px;
+        margin: 10px;
+      }
+}
+
+
+
 /* section-6 모바일 */
 @media all and (max-width:340px) {
     .section-6 {
