@@ -591,15 +591,17 @@ html {
     .section-6{
         overflow: hidden;
         padding: 0px;
+      
       }
       .partners{
         position: relative;
         display: flex;
         transition: transform 0.5s;
         padding: 0px;
+    
       }
       .section-6 img{
-        width: 70px;
+        width: 80px;
         margin: 10px;
       }
 }
