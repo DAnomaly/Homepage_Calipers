@@ -79,7 +79,10 @@ function loadJson() {
 
 }
 
-
+let scrollValue = 180;
+if($(window).width() < 768)
+    scrollValue = 100;
+    console.log(scrollValue);
 let showYear = 0;
 function yearOnClickEvent(loc, year) {
 
@@ -100,7 +103,7 @@ function yearOnClickEvent(loc, year) {
     // 해당 연혁으로 스크롤
     setTimeout(function(){
         $('html, body').animate({
-             scrollTop: $(loc).offset().top - 180
+             scrollTop: $(loc).offset().top - scrollValue
         }, 0);
     }, 400)
 }

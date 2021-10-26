@@ -118,24 +118,46 @@ hr {
 }
 
 /* mobile */
-@media screen and (max-width:600px) {
+@media screen and (max-width:767px) {
+    .section-container > .header {
+        top: -20px;
+    }
     .section-container > .header > p {
+        margin: 0;
+        padding: 0;
+        padding-top: 45px;
+        color: rgb(255,255,255);
         font-size: 23px;
+        text-shadow: 3px 3px 2px rgb(0,0,0);
+        text-align: center;
+        letter-spacing:2px
     }
     hr {
-        width: 80%;
+        margin-top: 10px;
+        width: 90%;
     }
 
+    #section {
+        margin: 0 2.4em;
+        margin-top: 20px;
+        width: auto;
+        padding-bottom: 40px;
+        color: rgb(255,255,255);
+    }
+    #section p {
+        display: flex;
+        position: relative;
+        margin:10px 0;
+        padding-left: 1em;
+        left: 0;
+        color: rgb(246,246,246);
+    }
     #section p > .month {
         display: inline-block;
         margin-right: 12px;
     }
     #section a {
         font-size: 20px;
-    }
-    #section{
-        width: 65%;
-        margin-top: 30px;
     }
     #section a {
         font-size: 20px;
