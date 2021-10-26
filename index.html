@@ -135,7 +135,7 @@
             </ul>
           </div>
           <div class="box">
-            <div class="title">금융기관</div>
+            <div class="title">일반기업</div>
             <ul>
               <li>희성금속</li>
               <li>조선호텔</li>
@@ -249,12 +249,20 @@
         <a href="//www.ibm.com/kr-ko">
           <img alt="ibm" src="./img/IBM.png"/>
         </a>
-        <a href="https://www.hp.com/kr-ko/home.html">
+        <a href="//www.hp.com/kr-ko/home.html">
           <img alt="hp" src="./img/HP.jpg"/>
         </a>
-        <a href="https://www.skcc.co.kr/">
+        <a href="//www.skcc.co.kr/">
           <img alt="skc&c" src="./img/skcnc.jpg"/>
         </a>
+      </div>
+      <div class="partners-button">
+        <button id="partners-left-btn" class="button">
+          <i class="fas fa-angle-left"></i>
+        </button>
+        <button id="partners-right-btn" class="button">
+          <i class="fas fa-angle-right"></i>
+        </button>
       </div>
     </div>
     
@@ -264,42 +272,58 @@
 
     
     <script>
-      let curPos = 0;
-      let postion = 0;
-      let start_x, end_x;
-      const IMAGE_WIDTH = 75;
-      const images = document.querySelector(".partners") 
+      let $scrollPage = $('.section-6 .partners');
+      let $imgs = $('.section-6 a');
+      let intervalTime = 2500;
+      let index = 0;
+
+      let $leftButton = $('#partners-left-btn');
+      let $rightButton = $('#partners-right-btn');
       
-      images.addEventListener('touchstart', touch_start);
-      images.addEventListener('touchend', touch_end);
-      
-      function prev(){
-        if(curPos > 0){
-          postion += IMAGE_WIDTH;
-          images.style.transform = `translateX(${postion}px)`;
-          curPos = curPos - 1;
+
+      let nextImg = () => {
+        $scrollPage.append($imgs[index]);
+        index++;
+        if(index >= $imgs.length) {
+            index = 0;
         }
+      };
+      let prevImg = () => {
+        index--;
+        if(index < 0)
+          index = $imgs.length - 1;
+        $scrollPage.prepend($imgs[index]);
+      };
+
+      let roofImg = () => {
+        setInterval(() => {
+          nextImg();
+        },intervalTime);
       }
-      function next(){
-        if(curPos < 3){
-          postion -= IMAGE_WIDTH;
-          images.style.transform = `translateX(${postion}px)`;
-          curPos = curPos + 1;
-        }
-      }
-      
-      function touch_start(event) {
+
+      let touch_start = (event) => {
         start_x = event.touches[0].pageX
       }
-      
-      function touch_end(event) {
+      let touch_end = (event) => {
         end_x = event.changedTouches[0].pageX;
-        if(start_x > end_x){
-          next();
-        }else{
-          prev();
+        if(start_x > end_x + 5){
+          nextImg();
+        }
+        if(start_x < end_x - 5){
+          prevImg();
         }
       }
+
+
+      if($(window).width() < 767) roofImg();
+      $leftButton.click(prevImg);
+      $rightButton.click(nextImg);
+
+      let start_x, end_x;
+      $scrollPage[0].addEventListener('touchstart', touch_start);
+      $scrollPage[0].addEventListener('touchend', touch_end);
+      
+
     </script>
 
 
