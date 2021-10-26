@@ -394,7 +394,7 @@ html {
     margin: 0;
     padding: 0;
     color:  rgb(254, 253, 255);
-    text-shadow: 2px 2px 6px rgb(61, 61, 61);
+    text-shadow: 2px 2px 5px rgb(61, 61, 61);
     font-size: 30px;
     text-align: center;
 }
@@ -594,6 +594,7 @@ html {
     max-width: 1200px;
 }
 
+
 .section-6 .partners img {
     max-height: 60px;
 }
@@ -629,7 +630,8 @@ html {
         background: none;
         border: none;
         font-size: 1.2em;
-        color: rgb(156, 156, 156);
+        color:  rgb(254, 253, 255);
+        text-shadow: 2px 2px 3px rgb(61, 61, 61);
     }
     .section-6 .partners-button button#partners-left-btn {
         justify-content: space-between;
