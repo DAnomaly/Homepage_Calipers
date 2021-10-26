@@ -630,8 +630,8 @@ html {
         background: none;
         border: none;
         font-size: 1.2em;
-        color:  rgb(254, 253, 255);
-        text-shadow: 2px 2px 3px rgb(61, 61, 61);
+        color:  rgba(254, 253, 255);
+        text-shadow: 0 0 3px rgb(61, 61, 61);
     }
     .section-6 .partners-button button#partners-left-btn {
         justify-content: space-between;
