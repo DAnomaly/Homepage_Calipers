@@ -10,6 +10,10 @@
 .wp-80 {width: 80%;}
 .wp-90 {width: 90%;}
 
+ol {
+    padding-left: 0;
+}
+
 /* section */
 .section {
     width: 1200px;
