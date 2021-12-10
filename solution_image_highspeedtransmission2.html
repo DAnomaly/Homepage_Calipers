@@ -10,89 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/banner.css">
-        
-        <style>
-            main {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                padding: 0;
-                margin: 0;
-            }
-            main header {
-                display: flex;
-                flex-direction: column;
-                width: 680px;
-                height: 420px;
-                margin: 0 auto;
-                background-color: rgb(240, 144, 78);
-                color: white;
-                text-align: center;
-                justify-content: space-evenly;
-            }
-            main header h4 {
-                display: block;
-                position: relative;
-                margin: 0;
-                padding: 0;
-                padding-top: 20px;
-                padding-bottom: 40px;
-                font-size: 40px;
-                line-height: 58px;
-            }
-            main header h4 .div-hr {
-                margin: 0;
-                padding: 0;
-                border-top: 4px solid rgba(255,255,255,0.6);
-            }
-            main header h4 .div-hr.left {
-                display: block;
-                position: absolute;
-                left: 0;
-            }
-            main header h4 .div-hr.right {
-                display: block;
-                position: absolute;
-                right: 0;
-            }
-            main header p {
-                margin: 0;
-                margin-top: 10px;
-                padding: 0;
-                font-size: 14px;
-                line-height: 30px;
-            }
-            section {
-                margin: 0;
-                padding: 0;
-            }
-
-            @media all and (max-width:1200px) {
-                main section {
-                    width: fit-content;
-                    margin: 0 auto;
-                    text-align: center;
-                }
-                main section img {
-                    width: 100%;
-                }
-            }
-            @media all and (max-width: 680px) {
-                main header {
-                    width: auto;
-                }
-                main header h4 {
-                    font-size: 28px;
-                }
-                br {
-                    display: none;
-                }
-                header p {
-                    word-break: keep-all;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                }
-            }
-
-        </style>
+        <link rel="stylesheet" href="./css/solution.css">
 
         <!-- jquery & javascript -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -112,29 +30,88 @@
         <!-- nav-bar -->
         <div id="nav-bar" data-title="고속전송 프로그램"></div>
 
-        <main>
-            <header>
-                <div>
-                    <h4>
-                        <div class="div-hr left" style="width: calc(50% + 152px); top: 20px;"></div>
-                        <span>고속전송 프로그램</span>
-                        <div class="div-hr right" style="width: calc(50% + 156px); bottom: 36px;"></div>
-                        <div class="div-hr right" style="width: calc(50% + 34px); bottom: 26px;"></div>
-                    </h4>
+        <div class="section">
+
+            <div class="box-container">
+                <div class="box">
+                    <h4 style="font-size: 1.5em">고속전송 프로그램</h4>
                     <p>
-                        고속전송 프로그램이란, 파일을 전송하는데 있어 속도와 보안 그리고 신뢰성을 제공하는<br/>
-                        소프트웨어 솔루션입니다. FileCatalyst의 UDP 및 TCP 기술을 이용한 빠르고 안정적이며 유연한<br/>
-                        파일 전송을 제공하며 SSL을 통해, AES를 이용하여 데이터 전송 암호화를 통해 보안성을 향상시켰습니다.<br/>
-                        해당 솔루션을 이용하시면 열악한 네트워크 환경에서도 때로는 FTP 보다 1000배 이상의<br/>
-                        파일전송 속도를 보여줍니다.
-                        UDP 기반 파일 전송 기술을 이용하여, 패킷 손실과 지연의<br/> 영향을 받지 않고, 최대 10Gbps 전송 속도로 파일을 전송하는 초고속 파일 전송 솔루션입니다.
+                        &nbsp;<strong>고속전송 프로그램</strong>이란, 
+                        파일을 전송하는데 있어 속도와 보안 그리고 신뢰성을 제공하는 소프트웨어 솔루션입니다.
+                    </p>
+                    <p>
+                        &nbsp;<strong>FileCatalyst</strong>의 UDP 및 TCP 기술을 이용한 빠르고 안정적이며 유연한 파일 전송을 제공하며 SSL을 통해, 
+                        AES를 이용하여 데이터 전송 암호화를 통해 보안성을 향상시켰습니다.<br/>
+                        &nbsp;해당 솔루션을 이용하시면 열악한 네트워크 환경에서도 때로는 FTP 보다 1000배 이상 파일전송 속도를 보여줍니다. 
+                        UDP 기반 파일 전송 기술을 이용하여, 패킷 손실과 지연의 영향을 받지 않고, 최대 10Gbps 전송 속도로 파일을 전송하는 초고속 파일 전송 솔루션입니다.
+                    </p>
+                    <p>
+                        &nbsp;다수의 이미지 파일을 전송 및 관리한다는 것은 종종 많은 용량의 데이터를 전송해야 하며 이 작업은 인터넷 환경에 따라 오랜 시간이 걸리기도 합니다. 
+                        고속전송 프로그램 솔루션을 통해 느린 전송 문제를 해결하고 더 나은 이미지관리와 작업환경을 제공할 수 있습니다.
                     </p>
                 </div>
-            </header>
-            <section style="text-align: center;">
-                <img src="/img/고속전송프로그램_attand.png">
-            </section>
-        </main>
+                <div class="box img-box">
+                    <div class="title-box">기존의 인터넷 전송 방식(TCP)</div>
+                    <img width="480px;" src="/img/INF_고속전송_TCP.png">
+                    <div class="title-box">고속전송 프로그램(FileCatalyst : UDP)</div>
+                    <img width="480px;" src="/img/INF_고속전송_filecatalyst.png">
+                </div>
+            </div>
+            <div class="col-lg"></div>
+
+            <div class="box-container">
+                <div class="box wp-50">
+                    <!-- Description -->
+                    <h4>주요 특징</h4>
+                    <dl>
+                        <dt>1. 전송 중 파일 보안</dt>
+                        <dd>- SSL을 통해, AES를 이용하여 데이터 전송 암호화가 가능합니다.</dd>
+                        <dt>2. 파일 전달 보증</dt>
+                        <dd>- 실시간 또는 MD5 checksums를 이용하여 각 파일을 검증합니다.</dd>
+                        <dt>3. 성장 파일 전송</dt>
+                        <dd>- 인코딩이 되는 동안 파일이 생성완료 될 때까지 기다림 없이 파일 전송 기능</dd>
+                        <dt>4. 파일 버전 관리</dt>
+                        <dd>- 기존 파일에서 달라진 부분만 전송하는 기능. 변경된 바이트만 전송 기능</dd>
+                        <dt>5. 압축</dt>
+                        <dd>- GZIP 또는 LZMA 알고리즘을 이용하여 데이터를 압축하여 전송 기능</dd>
+                        <dd>- 파일을 전송하는 즉시 압축하여 압축 및 해제 프로세스를 줄이고 대용량 데이터 시트를 빠르게 전송합니다.</dd>
+                    </dl>
+                </div>
+                <div class="box wp-50">
+                    <!-- Description -->
+                    <h4>주요 기능</h4>
+                    <dl>
+                        <dt>1. 업무 효율 보장</dt>
+                        <dd>- 열악한 네트워크 환경에 최적화, 최대 10Gbps 고속 데이터 전송</dd>
+                        <dd>- 대용량 또는 대량의 파일 전송에 효과적</dd>
+                        <dt>2. 안정성 및 보안성 향상</dt>
+                        <dd>- 연결 및 대역폭 관리, 전송 보장 및 우선순위 기능, 패킷 손실 면역화 및 암호화 고속전송</dd>
+                        <dt>3. 유연한 확장성과 통합성</dt>
+                        <dd>- 다양한 운영체제 지원, 솔루션의 모듈화</dd>
+                        <dt>4. 커스터마이징</dt>
+                        <dd>- SDK 옵션으로 기존 응용프로그램에 FileCatalyst 기능 통합 가능</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="col-lg"></div>
+
+            <div class="box-container">
+                <div class="box">
+                    <!-- Description -->
+                    <h4>적용 범위</h4>
+                    <dl>
+                        <dt>1. 데이터 미러링</dt>
+                        <dd>- 데이터 서버와 복구 서버의 동기화 기술에 고속전송 프로그램을 이용하여 재해에 대해 대비할 수 있습니다.</dd>
+                        <dt>2. 데이터 배포</dt>
+                        <dd>- 가속화된 속도로 필요로 하는 파일을 전송하거나 요청할 수 있습니다.</dd>
+                        <dd>- 가속화된 속도로 팀 구성원 및 동료에게 콘텐츠를 배포하거나, 최종 사용자에게 제품 및 업데이트를 배포할 수 있습니다.</dd>
+                        <dt>3. 클라우드 스토리지 통합</dt>
+                        <dd>- 클라우드 스토리지를 활용하여 여러 공급자의 스토리지를 통합하여 관리할 수 있습니다.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
         
         <div id="top-button"></div>
         <div id="bottom-container"></div>
