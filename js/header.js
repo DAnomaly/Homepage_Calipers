@@ -37,7 +37,7 @@ function generateHeader() {
                 .append(
                     $('<img>')
                         .attr('class', 'logo')
-                        .attr('alt', 'TRIPLEAIMS')
+                        .attr('alt', 'Calipers')
                         .attr('src', './img/mainlogo.png')
                 )
                 .attr('href','index.html')
@@ -106,7 +106,7 @@ function generateHeader() {
                 $.each(param, function (_index, value) { 
                     // class="loc-[title]"의 href를 조정
                     var href = value.href;
-                    var title = '.loc-' + value.title;
+                    var title = '.loc-' + value.title.replace('/','');
                     $('a' + title).attr('href', href);
                     $('div' + title).attr('onclick', 'location.href="' + href + '";');
                     
@@ -131,18 +131,15 @@ function generateFooter() {
     let $bottomContainer = $('<div>').appendTo($('#bottom-container').empty());
 
     // 내용
-    let content1 = 'Tripleaims company Inc';
-    let content2 = '150-105 서울시 영등포구 양평동5가 39 우림라이온스밸리 A동 1404호';
-    let content3 = '(02)6952-7005<br/>'
-                 + 'kimys@tripleaims.co.kr<br/>'
-                 + 'Copyright &copy; Tripleaims, Corp. All rights reserved';
+    let content1 = 'Copyright &copy; Calipers Corp. All rights reserved';
+    let content2 = '서울시 마포구 동교동 159-6 (# 806)';
 
     // 내용생성
     // left-container
     $('<div>')
         .addClass('left-container')
         .appendTo($bottomContainer)
-        .append('<img alt="TRIPLEAIMS" src="./img/mainlogo.png"/>');
+        .append('<img alt="Calipers" src="./img/bottomlogo.png"/>');
     // right-container
     $('<div>')
         .addClass('right-container')
@@ -154,12 +151,7 @@ function generateFooter() {
         .append(
             $('<p>')
                 .html(content2)
-        )
-        .append(
-            $('<p>')
-                .html(content3)
         );
-        
 }
 
 // id="nav-bar"

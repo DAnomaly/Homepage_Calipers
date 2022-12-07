@@ -62,7 +62,7 @@ body {
     max-width: 1200px;
 }
 #top-container #header .logo{
-    width: 280px;
+    width: 230px;
 }
 #top-container #header ul {
     position: absolute;
@@ -141,6 +141,7 @@ body {
     font-weight: normal;
     font-size: 15px;
 }
+/*
 #top-container #sub-menu > ul > li:nth-child(2) > ul {
     display: flex;
 }
@@ -152,7 +153,9 @@ body {
     font-weight: normal;
     font-size: 14px;
 }
+*/
 @media all and (max-width: 930px) and (min-width: 520px) {
+    /*
     #top-container #sub-menu > ul > li:nth-child(2) > ul {
         display: inherit;
     }
@@ -162,6 +165,7 @@ body {
     #top-container #sub-menu > ul > li > ul > li > ul {
         display: none;
     }
+    */
 }
 
 @media all and (max-width: 520px) {
@@ -178,12 +182,14 @@ body {
     #top-container #sub-menu > ul > li:last-child  {
         border-bottom: none;
     }
+    /*
     #top-container #sub-menu > ul > li:nth-child(2) > ul {
         display: inherit;
     }
     #top-container #sub-menu > ul > li:nth-child(2) > ul > li {
         font-weight: normal;
     }
+    */
     #top-container #sub-menu > ul > li > ul > li > ul {
         display: none;
     }
@@ -192,76 +198,50 @@ body {
 
 /* bottom-container */
 #bottom-container {
-    background-color: rgb(104, 165, 196);
+    background-color: rgb(255,255,255);
     box-sizing: border-box;
-}
-#bottom-container img {
-    padding-top: 40px;
-    width: 300px;
+    border-top: 1px solid rgb(202, 202, 202);
+    margin-bottom: 30px;
 }
 #bottom-container > div {
-    display: flex;
+    display: block;
     justify-content: space-between;
     width: 1000px;
+    padding-top: 10px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 #bottom-container > div > div {
-    width: 500px;
-    padding: 20px;
+    display: inline-block;
+    width: auto;
     box-sizing: border-box;
     font-size: 14px;
-    color: rgb(240, 240, 240);
+    padding-right: 10px;
+    color: rgb(104, 104, 104);
+}
+#bottom-container div > p {
+    margin: 2px;
+    font-size: 12px;
 }
 #bottom-container div > p:first-of-type {
     font-weight: bold;
-    color: rgb(255, 255, 255)
+    color: rgb(104, 104, 104);
 }
 
-@media all and (max-width: 1000px) and (min-width: 720px) {
+@media all and (max-width: 1000px) and (min-width: 350px) {
     #bottom-container > div {
         width: 100%;
-    }
-
-    #bottom-container > div > div {
-        width: 50%;
-        word-break: keep-all;
+        margin-left: 10px;
     }
 }
 
-@media all and (max-width: 720px) and (min-width: 350px) {
-    #bottom-container img {
-        display: none;
-    }
-
-    #bottom-container > div {
-        display: block;
-        width: 100%;
-        padding-left: 25px;
-    }
-
-    #bottom-container > div > div {
-        padding: 2px 0;
-        width: 100%;
-        word-break: keep-all;
-        font-size: 10px;
-    }
-    #bottom-container > div > div > p {
-        margin: 8px 0;
-    }
-}
 @media all and (max-width: 350px)  {
-    #bottom-container img {
-        display: none;
-    }
-
     #bottom-container > div {
-        display: block;
         width: 100%;
-        padding-left: 10px;
+        margin-left: 10px;
     }
     #bottom-container > div > div {
-        padding: 2px 0;
+        padding: 0;
         width: 100%;
         word-break: keep-all;
         font-size: 10px;
@@ -303,11 +283,11 @@ body {
 }
 #nav-bar .left-div {
     text-align: left;
-    width: 600px;
+    width: 490px;
 }
 #nav-bar .right-div {
     text-align: right;
-    width: 600px;
+    width: 490px;
 }
 #nav-bar :is(a, span, i) {
     display: inline-block;

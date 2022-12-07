@@ -1,4 +1,4 @@
-# TRIPLEAIMS 웹 유지보수 설명서
+# Calipers 웹 유지보수 설명서
 
 ## config
 

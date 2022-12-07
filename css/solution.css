@@ -16,13 +16,13 @@ ol {
 
 /* section */
 .section {
-    width: 1200px;
+    width: 980px;
     min-height: calc(100vh - 713px);
     margin: 0 auto;
     word-break: keep-all;
 }
 /* PC */
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1000px) {
     .section {
         width: auto;
         padding: 40px;
@@ -39,7 +39,7 @@ ol {
     object-fit: cover;
 }
 /* templet */
-@media all and (max-width:1200px) {
+@media all and (max-width:1000px) {
     .section .img-box {
         width: fit-content;
         margin: 0 auto;
